@@ -1,1 +1,1 @@
-# REDUX-password-generator
+# UPDATED-password-generator
