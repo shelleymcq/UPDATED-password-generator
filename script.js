@@ -9,10 +9,32 @@ function generatePassword() {
 }
 
 // generate random password
-function createPassword() {
+function createPassword(choices) {
 
+    let characterArr = [];
 
+    if (choices.lowerCase) {
+        characterArr.push('abcdefghijklmnopqrstuvwxyz');
+    }
+    if (choices.upperCase) {
+        characterArr.push('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    } 
+    if (choices.numbers) {
+        characterArr.push('0123456789')
+    }
+    if (choices.symbols) {
+        characterArr.push('!@#$%^&*_+`-=<>?')
+    }
+  
+    let characterStr = characterArr.join('');
 
+    let password = '';
+
+    for (let i = 0; i <= choices.passwordLength; i++) {
+        password = password + characterStr.charAt(Math.floor(Math.random() * characterStr.length));
+    }
+
+    console.log(password);
 
     // call generatePassword()
 }
@@ -75,10 +97,7 @@ function getInput() {
         return;
     }
 
-    console.log(choices);
-    return choices;
-
-    // call createPassword(choices);
+    createPassword(choices);
 }
 
 
