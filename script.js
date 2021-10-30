@@ -1,15 +1,14 @@
 const generateBtn = document.getElementById("generate");
 
-// write password to #password textarea
-function generatePassword() {
-    
+// render password to #password textarea
+function renderPassword(password) {
 
-
-
+    let text = document.querySelector("#password");
+    text.value = password;
 }
 
-// generate random password
-function createPassword(choices) {
+// generate random password according you user selections
+function generatePassword(choices) {
 
     let characterArr = [];
 
@@ -34,9 +33,7 @@ function createPassword(choices) {
         password = password + characterStr.charAt(Math.floor(Math.random() * characterStr.length));
     }
 
-    console.log(password);
-
-    // call generatePassword()
+    renderPassword(password);
 }
 
 
@@ -97,7 +94,7 @@ function getInput() {
         return;
     }
 
-    createPassword(choices);
+    generatePassword(choices);
 }
 
 
