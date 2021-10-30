@@ -1,10 +1,12 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    background-color: rgb(124, 78, 124);
 }
 
 .container {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 section {
@@ -14,15 +16,28 @@ section {
     width: 50%;
 }
 
+h1 {
+    color: white;
+}
+
 #password {
     padding: 2rem;
+    text-align: center;
+    width: 60%;
 }
 
 button {
-    background-color: blue;
+    background-color: rgb(59, 59, 112);
     color: white;
-    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    border-radius: 10px;
     padding: 5px;
-    width: 50%;
-    margin-top: 10px;
+    width: 40%;
+    margin-top: 20px;
 }
+
+button:hover {
+    background-color: rgb(45, 45, 94);
+}
+
