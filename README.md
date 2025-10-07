@@ -29,3 +29,12 @@ https://shelleymcq.github.io/UPDATED-password-generator/
 * JavaScript
 ## Contact 
 https://github.com/shelleymcq or shelleymcq.dev@gmail.com
+## Four Years Later
+I needed a bunch of test email accounts and random passwords, so decided to use my old baby password generator from bootcamp 💖
+
+And now I know all the things that are wrong with this one!
+
+### Next Steps - someday
+* Get rid of those alerts and use inputs and checkboxes for each
+* No numbers or special characters at the beginning of password
+* And a UI that isn't so...awful? No offense to baby me, but ooh boy have I gotten better 😂
